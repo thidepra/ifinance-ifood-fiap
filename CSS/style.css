@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  .mainContainer {
+    background-color: #ffffff;
+    height: 100%;
+  }
+
+  .logotype{
+    width: 40%;
+    height: auto;
+  }
+  
+  .logo {
+    flex: 50;
+    height: 100vh;
+    background-color: #F7F7F7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .containerAdvantages {
+    width: 90%;
+    height: 60%;
+    padding: 12px;
+  }
+  
+  .containerAdvantages p {
+    width: 90%;
+    height: 7%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 38px;
+    font-weight: 200;
+    text-align: left;
+    color: #3E3E3E;
+  }
+
+  .containerAdvantages h1 {
+    width: 90%;
+    height: 22%;
+    font-family: "Mulish", sans-serif;
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 64px;
+    text-align: left;
+    color: #3E3E3E;
+  }
+
+  .signInContainerh1 {
+    width: 90%;
+    height: 20%;
+    font-family: "Mulish", sans-serif;
+    font-size: 41px;
+    font-weight: 800;
+    line-height: 64px;
+    text-align: left;
+    color: #3E3E3E;
+  }
+
+  .logo button {
+    width: 35%;
+    height: 7%;
+    border-radius: 14px;
+    background-color: #EA1D2C;
+    color: #ffffff;
+    border: none;
+    font-family: "Mulish", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 64px;
+  }
+
+  .signInContainer button {
+    width: 35%;
+    height: 7%;
+    border-radius: 14px;
+    background-color: #EA1D2C;
+    color: #ffffff;
+    border: none;
+    font-family: "Mulish", sans-serif;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 64px;
+  }
+  
+  .signInContainer {
+    flex: 50;
+    height: 100vh;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .signIn {
+    width: 60%;
+    height: 10%;
+    border-radius: 14px;
+    background-color: #F2F2F2;
+    color: #717171;
+    padding: 16px;
+    border: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 38px;
+    font-weight: 200;
+    text-align: left;
+  }
+  
+  .signInContainer h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #EA1D2C;
+  }
+
+  .second-custom-link h1 {
+    width: 70%;
+    height: auto;
+    color: #717171;
+    border: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .custom-link {
+    text-decoration: underline;
+    text-decoration-color: #EA1D2C;
+  }
+
+  .second-custom-link {
+    text-decoration: none;
+    width: 100%;
+  }
+
+.google-button {
+  width: 35%;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 2px solid #F7F7F7;
+  border-radius: 50px;
+  text-decoration: none;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.google-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.google-button:hover {
+  background-color: #f1f1f1;
+  border-color: #888;
+}
+
+@media (max-width: 1660px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 100%;
+  }
+  .signInContainerh1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerAdvantages {
+    height: 60vh;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 730px) {
+  .signInContainerh1 {
+    width: 80%;
+    height: auto;
+    font-size: 35px !important;
+    font-weight: 800;
+    line-height: 64px;
+    text-align: left;
+    color: #3E3E3E;
+  }
+  .signIn {
+    width: 90%;
+  }
+  .logo button {
+    width: 250px;
+  }
+  .containerAdvantages {
+    width: 80%;
+    height: 80vh;
+  }
+  .google-button{
+    width: auto;
+  }
+  .containerAdvantages h1 {
+    width: 100%;
+    font-size: 35px !important;
+  }
+  .containerAdvantages p {
+    font-size: 35px;
+  }
+}
