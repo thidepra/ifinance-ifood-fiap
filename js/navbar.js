@@ -1,6 +1,6 @@
 // Função para carregar a navbar dinamicamente
 function loadNavbar() {
-    fetch('../navbar.html')
+    fetch('../components/navbar.html')
       .then(response => response.text())
       .then(data => {
         document.querySelector('#navbar-container').innerHTML = data;
