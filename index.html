@@ -35,10 +35,8 @@
           <p>Visualização de extrato de transações.</p>
         </div>
         <button
-          class="d-flex justify-content-center align-items-center"
-          data-test="login-btn"
-          type="submit"
-          id="loginBtn"
+          class="submit-btn"
+          onclick="window.location.href='pages/cadastro.html'"
         >
           Cadastre-se
         </button>
@@ -86,7 +84,7 @@
           </a>
           <a
             class="second-custom-link d-flex justify-content-center align-items-center"
-            href="/sign-up"
+            href="/pages/cadastro.html"
           >
             <h1
               class="d-flex justify-content-center align-items-center"
@@ -95,15 +93,15 @@
               Ainda não tem login? Cadastre-se aqui!
             </h1>
           </a>
+          <button
+            class="d-flex justify-content-center align-items-center"
+            data-test="login-btn"
+            type="submit"
+            id="loginBtn"
+          >
+            Login
+          </button>
         </form>
-        <button
-          class="d-flex justify-content-center align-items-center"
-          data-test="login-btn"
-          type="submit"
-          id="loginBtn"
-        >
-          Login
-        </button>
       </section>
     </div>
     <script
@@ -112,5 +110,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/navbar.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
