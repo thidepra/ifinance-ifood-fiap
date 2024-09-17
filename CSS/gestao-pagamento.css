@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+.page {
+    background-color: #F2F2F2 !important;
+}
 
 .gestao-pagamento-page {
     width: 100% !important;
     height: auto !important;
-    background-color: orange !important;
-    margin-bottom: 600px !important;
+    background-color: #F2F2F2 !important;
+    overflow-y: auto;
 }
 
 .titulo {
@@ -13,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F2F2F2 !important;
 }
 
 .page-titulo{
@@ -26,7 +30,7 @@
 }
 
 .login {
-    width: 15%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -62,21 +66,69 @@
     font-weight: 500;
 }
 
-.form-content {
+.card {
     width: 100%;
-    height: 40%;
-    background-color: red;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    border: none !important;
+    background-color: #F2F2F2 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.saldo-card {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.saldo-img {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.text-card {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #464255;
+    padding-left: 20px;
+}
+.text-card h2 {    
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+
+.text-card p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.form-content {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2 !important;
 }
 
 form {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-row {
@@ -91,6 +143,8 @@ form {
 
 .input-group {    
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .input-group:last-child {
@@ -99,37 +153,77 @@ form {
 
 label {
     display: block;
+    font-family: "Barlow Condensed", sans-serif;
     margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
+    font-size: 28px;
+    font-weight: 400;
+    color: #363130;
 }
 
-input {
+.input-group input {
     width: 100%;
+    height: 50px;
     padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
+    border: none;
     background-color: rgba(234, 29, 44, 0.15);
     color: #EA1D2C;
     text-align: center;
+    border-radius: 9px;
 }
-  
+
 input::placeholder {
     color: #EA1D2C;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
 }
-  
-button {
+
+.input-group > :not(:first-child) {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+form button {
     width: 100%;
+    height: auto;
     padding: 10px;
     border: none;
     background-color: #EA1D2C;
     color: #fff;
-    font-size: 16px;
-    border-radius: 5px;
+    border-radius: 9px;
     cursor: pointer;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 30px;
 }
-  
+
 button:hover {
     background-color: #b51728;
+}
+
+@media (max-width: 933px) {
+    .input-row {
+        display: flex;
+        flex-direction: column;
+    }
+    .form-content {
+        margin-bottom: 150px;
+    }
+    .login {
+        display: none;
+    }
+    .page-titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 
 }
