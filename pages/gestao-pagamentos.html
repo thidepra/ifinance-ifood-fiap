@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestão de Pagamentos</title>
-    <link rel="stylesheet" href="../CSS/navbar.css" />
-    <link rel="stylesheet" href="../CSS/gestao-pagamento.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div
-      class="new-container d-flex justify-content-between align-items-center"
-    >
-      <div class="navbar-container" id="navbar-container"></div>
-      <div class="page">
-        <div class="gestao-pagamento-page">
-          <h1>Gestão de Pagamentos</h1>
-          <p>Thiane</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestão de Pagamentos</title>
+  <link rel="stylesheet" href="../CSS/navbar.css" />
+  <link rel="stylesheet" href="../CSS/gestao-pagamento.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="new-container d-flex justify-content-between align-items-center">
+    <div class="navbar-container" id="navbar-container"></div>
+    <div class="page">
+      <div class="gestao-pagamento-page">
+        <header class="titulo">
+          <div class="pag-titulo">
+            <div>
+              <h1>Gestão de Pagamentos</h1>  
+              <p>Insira seus dados bancários</p>
+            </div>
+            <div class="login">
+              <p>Olá, <span>Samantha</span></p>
+              <img class="perfil" src="../assets/images/perfil.png" alt="">
+            </div>
+          </div>  
+        </header>
+        
+        <div class="card">
+          <div class="card-saldo">
+            <img src="../assets/images/saldo.png" alt="ícone de saldo"/>
+            <div class="text-card">
+              <h2>R$ 6.826,64</h2>
+              <p>Saldo</p>
+            </div>
+          </div>
         </div>
-      </div>
+        <div class="form-container">
+          <form name="dados-bancarios" id="dados">
+            <div class="form-group">
+              <label for="numero-banco">Código do Banco</label>
+              <input type="text" class="form-control" id="banco" placeholder="Ex: 341 (Itaú)" required>
+              <label for="agencia">Agência</label>
+              <input type="text" class="form-control" id="agencia" placeholder="Ex: 12345-6" required>
+              <label for="conta-corrente">Conta corrente</label>
+              <input type="text" class="form-control" id="conta" placeholder="Ex: 9999999-9" required>
+            </div>
+            <div class="form-group">
+              <label for="saque">Valor do Saque</label>
+              <input type="text" class="form-control" id="saque" placeholder="Ex: R$ 1000,00" required>
+            </div>
+            <button class="sacar-btn" type="submit" id="sacar">
+              Sacar
+            </button>
+          </form>
+        </div>
+      </div>     
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../js/navbar.js"></script>
-    <script src="../js/gestao-pagamento.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/gestao-pagamento.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>
