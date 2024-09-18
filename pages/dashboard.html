@@ -33,27 +33,33 @@
           <main>
             <section class="metrics">
               <div class="metric">
-                <img class="icone" src="../assets/images/dashboard/Group148.png" alt="logo Receita" />
-                  <h2>R$ 9.280,00</h2>
-                  <p>Receita</p>
-                  <p2>Pagamento via Ifood:  R$ 5.280,00</p2>
-                  <p2>Pagamento via cliente: R$ 4.000,00</p2>
+                  <img class="icone" src="../assets/images/dashboard/Group148.png" alt="logo Receita" />
+                  <div>
+                    <h2>R$ 9.280,00</h2>
+                    <p>Receita</p>
+                    <p2>Pagamento via Ifood:  R$ 5.280,00</p2>
+                    <p2>Pagamento via cliente: R$ 4.000,00</p2>
+                  </div>
               </div>
               
               <div class="metric">
-                <img class="icone" src="../assets/images/dashboard/Group123.png" alt="logo Despesa" />
-                  <h2>R$ 2.453,36</h2>
-                  <p>Despesas</p>
-                  <p2>Comissão Ifood:  R$ 2.134,40</p2>
-                  <p2>Taxa de pagamento via Ifood: R$ 168,96</p2>
-                  <p2>Mensalidade:  R$ 150,00</p2>
+                  <img class="icone" src="../assets/images/dashboard/Group123.png" alt="logo Despesa" />
+                  <div>
+                    <h2>R$ 2.453,36</h2>
+                    <p>Despesas</p>
+                    <p2>Comissão Ifood:  R$ 2.134,40</p2>
+                    <p2>Taxa de pagamento via Ifood: R$ 168,96</p2>
+                    <p2>Mensalidade:  R$ 150,00</p2>
+                  </div>
               </div>
 
               <div class="metric">
                 <img class="icone" src="../assets/images/dashboard/Group192.png" alt="logo Saldo" />
-                  <h2>R$ 6.826,64</h2>
-                  <p>Saldo</p>
-              </div>
+                  <div>
+                    <h2>R$ 6.826,64</h2>
+                    <p>Saldo</p>
+                  </div>
+                </div>
             </section>
 
             <section class="charts">
@@ -71,28 +77,120 @@
               <h1>Avaliações</h1>
               <p>Utimas Avaliações</p>
               <div class="review">
-                <img src="profile1.jpg" alt="Foto de perfil">
-                <h3>Jons Sena</h3>
-                <p>2 days ago</p>
-                <p>★★★★★ 4.5</p>
-                <p>"Excelente serviço de delivery! A comida chegou quente e dentro do prazo estimado. O entregador foi
-                  muito educado e o aplicativo é fácil de usar. Com certeza farei novos pedidos!"</p>
-              </div>
-              <div class="review">
-                <img src="profile2.jpg" alt="Foto de perfil">
-                <h3>Sofia</h3>
-                <p>2 days ago</p>
-                <p>★★★☆☆ 3.0</p>
-                <p>"Meu pedido veio errado. Liguei para o restaurante e eles se desculparam, mas a solução demorou muito
-                  para ser resolvida. Não sei se voltarei a pedir."</p>
-              </div>
-              <div class="review">
-                <img src="profile3.jpg" alt="Foto de perfil">
-                <h3>Anandreansyah</h3>
-                <p>2 days ago</p>
-                <p>★★★★☆ 4.5</p>
-                <p>"O serviço de delivery é bom, mas há espaço para melhorias. A comida chegou no horário, mas um pouco
-                  morna. O entregador foi simpático, mas demorou um pouco para encontrar meu endereço."</p>
+                <div class="avaliacao-card">
+                  <div>
+                    <div class="avaliacao-header">
+                      <img class="avaliacao-perfil" src="../assets/images/john.png" alt="Imagem de perfil" />
+                      <div class="avaliacao-text">
+                        <h2>John Sena</h2>
+                        <p>2 dias atrás</p>
+                      </div>
+                    </div>
+                    <div class="avaliacao-comentario">
+                      <p class="card1">"Excelente serviço de delivery! A comida chegou quente e dentro do prazo estimado.
+                        O entregador foi muito educado e o aplicativo é fácil de usar. Com certeza farei novos pedidos!"</p>
+                    </div>
+                    <div class="avaliacao-nota">
+                      <div class="nota">
+                        <ion-icon name="star" class="starOrange"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starGray" name="star"></ion-icon>
+                        <p>4,5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card2">
+                    <img class="comida" src="../assets/images/ovo.png" alt="">
+                  </div>
+                </div>
+      
+                <div class="avaliacao-card">
+                  <div>
+                    <div class="avaliacao-header">
+                      <img class="avaliacao-perfil" src="../assets/images/sofia.png" alt="Imagem de perfil" />
+                      <div class="avaliacao-text">
+                        <h2>Sofia </h2>
+                        <p>2 dias atrás</p>
+                      </div>
+                    </div>
+                    <div class="avaliacao-comentario">
+                      <p class="card1">"Meu pedido veio errado. Liguei para o restaurante e eles se desculparam, mas a solução demorou muito
+                        para ser resolvida. Não sei se voltarei a pedir."</p>
+                    </div>
+                    <div class="avaliacao-nota">
+                      <div class="nota">
+                        <ion-icon name="star" class="starOrange"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starGray" name="star"></ion-icon>
+                        <ion-icon class="starGray" name="star"></ion-icon>
+                        <p>3,0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card2">
+                    <img class="comida" src="../assets/images/camarao.png" alt="">
+                  </div>
+                </div>
+                <div class="avaliacao-card">
+                  <div>
+                    <div class="avaliacao-header">
+                      <img class="avaliacao-perfil" src="../assets/images/andre.png" alt="Imagem de perfil" />
+                      <div class="avaliacao-text">
+                        <h2>Anandreansyah</h2>
+                        <p>3 dias atrás</p>
+                      </div>
+                    </div>
+                    <div class="avaliacao-comentario">
+                      <p class="card1">"O serviço de delivery é bom, mas há espaço para melhorias. A comida chegou no horário, mas um pouco
+                        morna. O entregador foi simpático, mas demorou um pouco para encontrar meu endereço."</p>
+                    </div>
+                    <div class="avaliacao-nota">
+                      <div class="nota">
+                        <ion-icon name="star" class="starOrange"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starGray" name="star"></ion-icon>
+                        <p class="decimal-nota">4,0</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card2">
+                    <img class="comida" src="../assets/images/camarao.png" alt="">
+                  </div>
+                </div>
+                <div class="avaliacao-card ultimo">
+                  <div>
+                    <div class="avaliacao-header">
+                      <img class="avaliacao-perfil" src="../assets/images/john.png" alt="Imagem de perfil" />
+                      <div class="avaliacao-text">
+                        <h2>John Sena</h2>
+                        <p>5 dias atrás</p>
+                      </div>
+                    </div>
+                    <div class="avaliacao-comentario">
+                      <p class="card1">"Excelente serviço de delivery! A comida chegou quente e dentro do prazo estimado.
+                        O entregador foi muito educado e o aplicativo é fácil de usar. Com certeza farei novos pedidos!"</p>
+                    </div>
+                    <div class="avaliacao-nota">
+                      <div class="nota">
+                        <ion-icon name="star" class="starOrange"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starOrange" name="star"></ion-icon>
+                        <ion-icon class="starGray" name="star"></ion-icon>
+                        <p>4,5</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card2">
+                    <img class="comida" src="../assets/images/ovo.png" alt="">
+                  </div>
+                </div>
+                
               </div>
             </section>
           </main>

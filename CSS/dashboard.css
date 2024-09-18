@@ -14,6 +14,7 @@
 
 .metrics {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 20px 0;
 }
@@ -26,23 +27,26 @@
     flex: 1;
     margin: 0 10px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
     padding-bottom: 20px;
 }
 
 .metric h2 {
     margin: 0 0 10px;
-    font-size: 20px
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .metric p {
-    height: 20px;
+    height: 10px;
     top: 83px;
     Color: #464255;
 }
 .metric p2 {
-    height: 20px;
-    top: 70px;
+    height: 5px !important;
+    font-size: 10px;
     Color: #464255;
 }
 
@@ -193,6 +197,88 @@
 
 .login span {
     font-weight: 500;
+}
+
+
+
+.sessao-avaliacoes {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+  }  
+
+.avaliacao-card {
+    background-color: #ffffff;
+    width: 35%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.card2 {
+    width: 50%;
+}
+
+.comida {
+    width: 300%;
+}  
+
+.avaliacao-header {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.avaliacao-perfil {
+    width: 80px;
+    height: 80px;
+}
+
+.avaliacao-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avaliacao-texto h2 {
+    color: #464255; 
+}
+
+.avaliacao-texto p {
+    color: #A3A3A3;
+}
+
+.card1{
+    width: 90%;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.starOrange {
+    color: #F7C604;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.starGray {
+    color: #B9BBBD;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.avaliacao-nota {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
 }
 
 @media (max-width: 1200px) {
