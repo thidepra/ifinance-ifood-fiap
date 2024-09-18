@@ -2,7 +2,7 @@
 
 .avaliacoes-page {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
     background-color: #F2F2F2 !important;
 }
 
@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     background-color: #F2F2F2 !important;
+    padding: 30px;
 }
 
 .page-titulo{
@@ -63,24 +64,24 @@
 }
 
 .sessao-avaliacoes {
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: yellow !important;
-}
+    justify-content: space-around;
+    background-color: #F2F2F2;
+  }  
 
 .avaliacao-card {
     background-color: blue;
-    width: 400px;
+    width: 35%;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .card2 {
@@ -89,7 +90,7 @@
 
 .comida {
     width: 300%;
-}
+}  
 
 .avaliacao-header {
     width: 60%;
@@ -97,8 +98,8 @@
     justify-content: space-around;
 }
 .avaliacao-perfil {
-    width: 30%;
-    height: auto;
+    width: 80px;
+    height: 80px;
 }
 
 .avaliacao-texto {
@@ -140,4 +141,56 @@
     display: flex;
     justify-content: space-between;
     width: 35%;
+}
+
+@media (max-width: 1700px) {
+.sessao-avaliacoes {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+.avaliacao-card {
+    width: 80%;
+    height: auto;
+}
+
+.card2 {
+    display: none;
+}
+
+.card1 {
+    width: 95%;
+}
+.avaliacao-header {
+    width: 30%;
+}
+.sessao-avaliacoes {
+    margin-bottom: 100px;
+  } 
+}
+
+@media (max-width: 933px) {
+    .login {
+        display: none;
+    }
+    .page-titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+@media (max-width: 900px) {
+.avaliacao-perfil{
+    display: none;    
+}
+.avaliacao-header{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.avaliacao-nota {
+    width: 60%;
+}
 }
