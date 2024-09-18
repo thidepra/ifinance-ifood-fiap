@@ -73,7 +73,7 @@
   }  
 
 .avaliacao-card {
-    background-color: blue;
+    background-color: #ffffff;
     width: 35%;
     height: auto;
     display: flex;
@@ -145,7 +145,7 @@
 
 @media (max-width: 1700px) {
 .sessao-avaliacoes {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,7 +168,12 @@
 }
 .sessao-avaliacoes {
     margin-bottom: 100px;
-  } 
+}
+
+.ultimo {
+    margin-bottom: 150px;
+}
+
 }
 
 @media (max-width: 933px) {
