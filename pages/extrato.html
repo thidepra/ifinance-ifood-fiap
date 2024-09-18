@@ -32,26 +32,29 @@
         <section class="sessao-saldo">
           <div class="metric">
             <img class="icone" src="../assets/images/dashboard/Group148.png" alt="logo Receita" />
-            <div>
+            <div class="centralizar">
               <h2>R$ 9.280,00</h2>
               <p>Receita</p>
-              <p2>Pagamento via Ifood: R$ 5.280,00</p2>
-              <p2>Pagamento via cliente: R$ 4.000,00</p2>
+              <h3>Pagamento via Ifood: R$ 5.280,00</h3>
+              <h3>Pagamento via cliente: R$ 4.000,00</h3>
             </div>
           </div>
+
           <div class="metric">
             <img class="icone" src="../assets/images/dashboard/Group123.png" alt="logo Despesa" />
-            <div>
+            <div class="centralizar">
               <h2>R$ 2.453,36</h2>
               <p>Despesas</p>
-              <p2>Taxa de pagamento via Ifood: R$ 168,96</p2>
-              <p2>Comissão Ifood: R$ 2.134,40</p2>
-              <p2>Mensalidade: R$ 150,00</p2>
+              <h3>Comissão Ifood: R$ 2.134,40</h3>
+              <h3>Taxa de Pagamento Via Ifood:</h3>
+              <h3>R$ 168,96</h3>
+              <h3>Mensalidade: R$ 150,00</h3>
             </div>
           </div>
+
           <div class="metric">
             <img class="icone" src="../assets/images/dashboard/Group192.png" alt="logo Saldo" />
-            <div>
+            <div class="centralizar">
               <h2>R$ 6.826,64</h2>
               <p>Saldo</p>
             </div>
@@ -75,7 +78,7 @@
               </div>
             </form>
           </div>
-          <table>
+          <table class="tabela-extrato">
             <thead>
               <tr>
                 <th>Nome do cliente</th>
@@ -94,7 +97,7 @@
                 <td>Cartão de Crédito</td>
                 <td>R$ 150,00</td>
                 <td><button class="tabela-btn"
-                    onclick="openModal('João da Silva', 'pix', '150,00')">Ver</button>
+                    onclick="openModal('João da Silva', 'Cartão de Crédito', '150,00')">Ver</button>
                 </td>
               </tr>
               <tr>
@@ -103,7 +106,9 @@
                 <td>02/01/2024</td>
                 <td>Boleto</td>
                 <td>R$ 200,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Maria Oliveira', 'Boleto', '150,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td>Ana Souza</td>
@@ -111,7 +116,9 @@
                 <td>03/01/2024</td>
                 <td>Pix</td>
                 <td>R$ 75,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Ana Souza', 'Pix', '75,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td>Carlos Santos</td>
@@ -119,7 +126,9 @@
                 <td>04/01/2024</td>
                 <td>Cartão de Crédito</td>
                 <td>R$ 120,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Carlos Santos', 'Cartão de Crédito', '120,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td>Lucia Almeida</td>
@@ -127,7 +136,9 @@
                 <td>05/01/2024</td>
                 <td>Boleto</td>
                 <td>R$ 250,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Lucia Almeida', 'Boleto', 'R$ 250,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td>Roberto Lima</td>
@@ -135,7 +146,9 @@
                 <td>06/01/2024</td>
                 <td>Pix</td>
                 <td>R$ 90,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Roberto Lima', 'Pix', '90,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td>Fernanda Costa</td>
@@ -143,7 +156,9 @@
                 <td>07/01/2024</td>
                 <td>Cartão de Crédito</td>
                 <td>R$ 300,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Fernanda Costa', 'Cartão de Crédito', '300,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td>Lucas Pereira</td>
@@ -151,15 +166,9 @@
                 <td>08/01/2024</td>
                 <td>Boleto</td>
                 <td>R$ 180,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
-              </tr>
-              <tr>
-                <td>Matheus Silva</td>
-                <td>009</td>
-                <td>10/01/2024</td>
-                <td>Pix</td>
-                <td>R$ 50,00</td>
-                <td><button class="tabela-btn">Ver</button></td>
+                <td><button class="tabela-btn"
+                  onclick="openModal('Lucas Pereira', 'Boleto<', '180,00')">Ver</button>
+              </td>
               </tr>
               <tr>
                 <td colspan="6" class="ver-mais-btn-row">

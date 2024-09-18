@@ -21,7 +21,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #464255;   
+    color: #464255;
+    margin-top: 30px;  
 }
 
 .login {
@@ -151,7 +152,6 @@ table {
     margin-top: 8px;
     font-family: "Barlow Condensed";
     font-size: 20px;
-    margin-bottom: 50px;
 }
 
 th, td {
@@ -197,18 +197,23 @@ tr:nth-child(even) {
     background-color: #b51728;
 }
 
+.tabela-extrato {
+    margin-bottom: 50px;
+}
+
 .sessao-retirada {
     width: 100%;
     height: auto;
     background-color: #F2F2F2 !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .tabela-retirada {
+    height: auto;
     background-color: #FFFF !important;
-    margin-bottom: 150px;
+    margin-bottom: 400px;
 }
 
 .extrato{
@@ -218,26 +223,26 @@ tr:nth-child(even) {
 }
 
 .sessao-saldo {
-    width: 91%;
+    width: 90%;
+    margin-left: 70px;
     display: flex;
-    flex-direction: center;
+    flex-direction: row;
     justify-content: space-between;
-    margin-left: 65px;
-    margin-top: 60px;
-    margin-bottom: 50px;
-
+    font-family: "Barlow Condensed", sans-serif;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .metric {
     background-color: rgb(255, 255, 255);
     padding: 20px;
+    border-radius: 8px;
     text-align: start ;
     flex: 1;
     margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
     padding-bottom: 20px;
 }
 
@@ -252,17 +257,19 @@ tr:nth-child(even) {
 .metric h2 {
     margin: 0 0 10px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
+    color: #464255;
 }
 
 .metric p {
     height: 10px;
     color: #464255;
+    font-weight: 500;
 }
 .metric h3 {
     height: 5px !important;
     font-size: 10px;
-    color: #464255;
+    color: #A3A3A3;
     width: auto;
 }
 
@@ -272,27 +279,26 @@ tr:nth-child(even) {
     padding: 20px;
 }
 
+
+@media (max-width: 1200px) {
+.sessao-saldo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+    
+.sessao-retirada {
+    margin-bottom: 150px;
+}
+}
+
 @media (max-width: 933px) {
     .login {
         display: none;
     }
-    .page-titulo {
+    .page-titulo{
         display: flex;
         justify-content: center;
         align-items: center;  
-    }
-    .input-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 533px) {
-    .sessao-controle {
-        width: 100%;
-    }
-    table {
-        width: 90%;
     }
 }
