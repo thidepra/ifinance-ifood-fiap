@@ -68,10 +68,6 @@
     
 }
 
-.hydrated {
-    background-color: #F3F2F7 !important;
-}
-
 .metrics {
     display: flex;
     flex-direction: row;
