@@ -2,7 +2,7 @@
 
 .extrato-page {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     background-color: #F2F2F2 !important;
 }
 
@@ -208,7 +208,68 @@ tr:nth-child(even) {
 
 .tabela-retirada {
     background-color: #FFFF !important;
+    margin-bottom: 150px;
+}
+
+.extrato{
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2 !important;
+}
+
+.sessao-saldo {
+    width: 91%;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-between;
+    margin-left: 65px;
+    margin-top: 60px;
     margin-bottom: 50px;
+
+}
+
+.metric {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: start ;
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.centralizar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 70%;
+}
+
+.metric h2 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.metric p {
+    height: 10px;
+    color: #464255;
+}
+.metric h3 {
+    height: 5px !important;
+    font-size: 10px;
+    color: #464255;
+    width: auto;
+}
+
+.icone {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
 }
 
 @media (max-width: 933px) {
