@@ -48,8 +48,16 @@
 
 .metric p {
     height: 10px;
+    font-size: 20px;
     color: #464255;
 }
+
+.metric p2 {
+    height: 10px;
+    font-size: 14px;
+    color: #464255;
+}
+
 .metric h3 {
     height: 5px !important;
     font-size: 10px;
