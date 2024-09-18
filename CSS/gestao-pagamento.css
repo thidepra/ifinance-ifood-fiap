@@ -5,9 +5,9 @@
 
 .gestao-pagamento-page {
     width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
     background-color: #F2F2F2 !important;
-    overflow-y: auto;
+    
 }
 
 .titulo {
@@ -225,5 +225,4 @@ button:hover {
         align-items: center;
     }
     
-
 }
