@@ -1,5 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 .dashboard-page {
     width: 100% !important;
     height: 100% !important;
-    background-color: gold !important;
+    background-color: #F3F2F7 !important;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.metric {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: start ;
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.metric h2 {
+    margin: 0 0 10px;
+    font-size: 20px
+}
+
+.metric p {
+    height: 20px;
+    top: 83px;
+    Color: #464255;
+}
+.metric p2 {
+    height: 20px;
+    top: 70px;
+    Color: #464255;
+}
+
+.icone {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+}
+
+.saldo-card {
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.text-card {
+    font-family: "Barlow Condensed", sans-serif;
+    color: #464255;
+    padding-left: 20px;
+}
+
+.text-card h2 {    
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+
+.text-card p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+
+}
+
+.charts2 {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.charts img{
+    width: 49%;
+}
+
+.grafico-img {
+    width: 63%;
+}
+
+.barra-img {
+    width: 35%;
+}
+
+
+.chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.reviews {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.titulo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2 !important;
+}
+
+.page-titulo{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #464255;   
+    
+}
+
+.login {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil-img {
+    width: 90px;
+    height: 90px;
+}
+
+.page-titulo h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.page-titulo p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #A3A3A3;
+}
+
+.login p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #464255
+}
+
+.login span {
+    font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+    .metrics {
+        display: flex;
+        flex-direction: column;
+    }
 }
