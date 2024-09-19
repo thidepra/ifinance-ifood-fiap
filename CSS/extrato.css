@@ -190,7 +190,7 @@ tr:nth-child(even) {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 28px;
     font-weight: 400;
-    width: 20%;
+    width: auto;
 }
 
 .ver-mais-btn:hover {
@@ -220,11 +220,14 @@ tr:nth-child(even) {
     width: 100%;
     height: auto;
     background-color: #F2F2F2 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .sessao-saldo {
     width: 90%;
-    margin-left: 70px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -290,6 +293,17 @@ tr:nth-child(even) {
 .sessao-retirada {
     margin-bottom: 150px;
 }
+.input-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 30px;
+}
+form button {
+    margin-left: 0px;
+}
 }
 
 @media (max-width: 933px) {
@@ -300,5 +314,8 @@ tr:nth-child(even) {
         display: flex;
         justify-content: center;
         align-items: center;  
+    }
+    .sumir{
+        display: none;
     }
 }
