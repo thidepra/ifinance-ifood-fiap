@@ -9,7 +9,7 @@ let capturedImageDescriptor = null;
 const cam = video;
 
 async function loadLabels() {
-    const labels = ['Paulo', 'Thiane', 'Nathalia', 'Wellington', 'Gabriela'];
+    const labels = ['Paulo', 'Thiane', 'Nathalia', 'Wellington', 'Gabriela','Nayara'];
     for (const label of labels) {
         const imgUrl = `./labels/${label}/1.jpeg`; // Ajuste o caminho aqui
         const img = await faceapi.fetchImage(imgUrl);
@@ -100,6 +100,8 @@ validateButton.addEventListener('click', async () => {
                 matchedName = 'Wellington';
             } else if (bestMatch.label === 'person 5') {
                 matchedName = 'Gabriela';
+            } else if (bestMatch.label === 'person 6') {
+                matchedName = 'Nayara';
             }
         console.log(matchedName)
 
@@ -170,8 +172,10 @@ cam.addEventListener('play', () => {
                 matchedName = 'Wellington';
             } else if (bestMatch.label === 'person 5') {
                 matchedName = 'Gabriela';
+            }  else if (bestMatch.label === 'person 6') {
+                matchedName = 'Nayara';
             }
-            
+
             // Desenhar o nome correspondente no canvas
             new faceapi.draw.DrawTextField([matchedName], box.bottomRight).draw(canvas);
         });
