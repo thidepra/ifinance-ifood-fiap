@@ -8,7 +8,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
     if (codigoValidacao) {
         alert('Cadastro realizado com sucesso!');
         // Aqui você pode enviar os dados para um backend futuramente
-        window.location.href = "dashboard.html";
+        window.location.href = "reconhecimento-facial.html";
     } else {
         alert('Por favor, preencha todos os campos.');
     }

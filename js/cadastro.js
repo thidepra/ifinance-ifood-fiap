@@ -11,6 +11,11 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
 
     // Validar campos
     if (fullName && cpf && logoUrl && phone && email && password) {
+        const firstName = removeAccents(fullName.split(' ')[0]); // Remover acentos apenas do primeiro nome
+
+        // Armazena o primeiro nome no local storage
+        localStorage.setItem('firstName', firstName);
+        
         alert('Cadastro realizado com sucesso!');
         // Aqui você pode enviar os dados para um backend futuramente
         window.location.href = "validacao.html";
@@ -18,3 +23,8 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         alert('Por favor, preencha todos os campos.');
     }
 });
+
+// Função para remover acentos
+function removeAccents(str) {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
