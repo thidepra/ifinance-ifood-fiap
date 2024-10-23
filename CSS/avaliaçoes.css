@@ -2,9 +2,9 @@
 
 .avaliacoes-page {
     width: 100% !important;
-    height: auto !important;
+    min-height: 100vh; /* Define altura mínima para preencher a tela */
     background-color: #F2F2F2 !important;
-}
+    padding-bottom: 40px; /* Garante espaçamento no final da página */
 
 .titulo {
     width: 100%;

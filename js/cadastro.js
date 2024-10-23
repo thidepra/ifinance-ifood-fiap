@@ -1,4 +1,4 @@
-document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+document.getElementById('cadastroForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
     // Capturar os dados do formulário
@@ -15,7 +15,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
 
         // Armazena o primeiro nome no local storage
         localStorage.setItem('firstName', firstName);
-        
+
         alert('Cadastro realizado com sucesso!');
         // Aqui você pode enviar os dados para um backend futuramente
         window.location.href = "validacao.html";
