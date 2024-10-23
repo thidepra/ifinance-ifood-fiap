@@ -33,9 +33,9 @@ Além disso, esse projeto foi selecionado para Festival de Tecnologia e Inovaç�
 
 ## Acesso ao projeto
 <p>
-O projeto foi hospedado na plataforma em nuvem <a href="https://ifinance-client.vercel.app/">Vercel</a>.
+O projeto foi hospedado na plataforma em nuvem <a href="https://vercel.com/https://ifinance-client.vercel.app/">Vercel</a>.
 </p>
-Para acessar o link do deploy da aplicação basta clicar em <a href="https://vercel.com/">Ifinance Client</a>.
+Para acessar o link do deploy da aplicação basta clicar em <a href="https://ifinance-client.vercel.app/">Ifinance Client</a>.
 
 
 
