@@ -45,6 +45,22 @@ body {
     align-items: center;
 }
 
+.form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.form-title {
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
 .form-group h1 {
     width: 80%;
     text-align: left;
@@ -97,6 +113,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
 
   @media (max-width: 1650px) {

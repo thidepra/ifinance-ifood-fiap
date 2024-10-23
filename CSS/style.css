@@ -74,10 +74,13 @@
     font-size: 35px;
     font-weight: 800;
     line-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .signInContainer button {
-    width: 35%;
+    width: 60%;
     height: 12%;
     border-radius: 14px;
     background-color: #EA1D2C;
@@ -87,6 +90,9 @@
     font-size: 35px;
     font-weight: 800;
     line-height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .signInContainer {
@@ -196,6 +202,7 @@
     line-height: 64px;
     text-align: left;
     color: #3E3E3E;
+    margin-bottom: 50px;
   }
   .signIn {
     width: 90%;
@@ -212,9 +219,19 @@
   }
   .containerAdvantages h1 {
     width: 100%;
+    height: auto;
     font-size: 35px !important;
+    margin-bottom: 25px;
+  }
+  .containerAdvantages p {
+    font-size: 25px !important;
   }
   .containerAdvantages p {
     font-size: 35px;
+    height: auto;
+  }
+  .logotype{
+    width: 50%;
+    margin-bottom: 45px;
   }
 }
