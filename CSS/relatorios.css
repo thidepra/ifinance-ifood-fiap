@@ -77,6 +77,21 @@
     z-index: 1;
 }
 
+.lastcard {
+    width: 48%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    border: none !important;
+    background-color: #F2F2F2 !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
 .saldo-card {
     width: 90%;
     height: 100%;
@@ -142,7 +157,14 @@
         margin-bottom: 140px;
     }
     .card {
-        width: 90%;
+        width: 100%;
+    }
+    .lastcard {
+        width: 100%;
+        margin-bottom: 150px;
+    }
+    .saldo-card {
+        width: auto;
     }
     .form-group button {
         font-size: 25px;

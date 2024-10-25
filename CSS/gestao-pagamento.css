@@ -224,5 +224,16 @@ button:hover {
         justify-content: center;
         align-items: center;
     }
-    
+    .new-container {
+        height: auto;
+        padding-top: 50px;
+    }
+    body {
+        background-color: #F2F2F2 !important;
+    }
+    .text-card h2 {    
+        font-size: 25px;
+        font-weight: 700;
+        
+    }
 }

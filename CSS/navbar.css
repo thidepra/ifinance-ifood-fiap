@@ -87,7 +87,7 @@
         position: fixed !important;
         bottom: 0 !important;
         left: 0;
-        width: 100%;
+        width: auto;
         top:auto;
         height: 14%;
         padding-top: 0px;
